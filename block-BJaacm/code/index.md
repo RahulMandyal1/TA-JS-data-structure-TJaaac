@@ -5,7 +5,7 @@ let user = {
 };
 let allBrothers = ['Robb', 'Ryan', 'John'];
 let brothersCopy = user.sibling;
-let usename = user.name;
+let username = user.name;
 let newUser = user;
 ```
 
@@ -18,18 +18,19 @@ let newUser = user;
 
 2. Answer the following with reason:
 
-- `user == newUser;` // output and reason
-- `user === newUser;`
-- `user.name === newUser.name;`
-- `user.name == newUser.name;`
-- `user.sibling == newUser.sibling;`
-- `user.sibling === newUser.sibling;`
-- `user.sibling == allBrothers;`
-- `user.sibling === allBrothers;`
-- `brothersCopy === allBrothers;`
-- `brothersCopy == allBrothers;`
-- `brothersCopy == user.sibling;`
-- `brothersCopy === user.sibling;`
-- `brothersCopy[0] === user.sibling[0];`
-- `brothersCopy[1] === user.sibling[1];`
-- `user.sibling[1] === newUser.sibling[1];`
+- `user == newUser;` // true // Both the variable hold the same   address of the memory block that has the object 
+- `user === newUser;` // true  // Both the variable hold the same   address of same type  
+- `user.name === newUser.name;` //true Both the variable hold the same  value of the  key named name and has same type
+- `user.name == newUser.name;`//true  Both the variable hold the same  value of the  key named name
+- `user.sibling == newUser.sibling;` // true Both the variable hold the same  value of the  key named sibling
+- `user.sibling === newUser.sibling;` // true Both the variable hold the same  value of the  key named sibling that has same type
+- `user.sibling == allBrothers;`  // false user is a object where allBorthers  is a array
+- `user.sibling === allBrothers;` // false   user is a object where allBorthers  is a array
+- `brothersCopy === allBrothers;`  // false brotherCopy is a object whereas allBorthers  is a array
+- `brothersCopy == allBrothers;` // false    brotherCopy is a object whereas allBorthers is a array
+- `brothersCopy == user.sibling;` //  // true  because brotherCopy is  also object and hold same value . 
+- `brothersCopy === user.sibling;`//  true  because brotherCopy is  also object and hold same value . 
+- `brothersCopy[0] === user.sibling[0];` // true  because both  hold the same  value
+- `brothersCopy[1] === user.sibling[1];` // true Because both hold the  same value
+- `user.sibling[1] === newUser.sibling[1];` // true Both obejct hold same value
+
